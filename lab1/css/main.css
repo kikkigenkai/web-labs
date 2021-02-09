@@ -1,0 +1,17 @@
+body{
+    background-image: url('../gifs/6.gif');
+    background-size: cover;
+}
+
+.card-margin {
+    margin-top: 15px;
+}
+
+.aling-text {
+    text-align: center;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}

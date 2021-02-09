@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Login</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand col-4" href="index.html">&#92;b</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav col-12">
+                  <a class="nav-link col-3" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link col-3" href="about.html">About</a>
+                  <a class="nav-link col-3" href="register.html">SignUp</a>
+                  <a class="nav-link col-3 active" href="login.html">SignIn</a>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="main">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12 card center">
+                    <form>
+                        <h4 class="card-title mb-4">Login</h4>
+                        <div class="mb-3 col-12">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3 col-12">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-dark col-12 mb-2">Login</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
