@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Register</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand col-4" href="index.html">&#92;b</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav col-12">
+                  <div class="d-flex flex-fill">
+                    <a class="nav-link active flex-grow-1" href="register.html">SignUp</a>
+                    <a class="nav-link flex-grow-1" href="login.html">SignIn</a>
+                </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="main">
+        <div class="container mt-5">
+            <div class="row center">
+                <div class="col-4 card center">
+                  <div class="card-body">
+                    <form>
+                        <h4 class="card-title mb-4">Register</h4>
+                        <div class="mb-3 col-12">
+                            <label for="exampleInputEmail1" class="form-label">Nickname</label>
+                            <input type="text" class="form-control" name="nickname">
+                          </div>
+                        <div class="mb-3 row">
+                          <div class="col">
+                            <label for="inputState" class="form-label">Birth date</label>
+                            <input class="form-control" type="date" value="1970-01-01" name="birthDate">
+                          </div>
+                        </div>
+                        <div class="mb-3 col-12">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" name="email">
+                        </div>
+                        <div class="mb-3 col-12">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" name="password">
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gender" value="male">
+                          <label class="form-check-label">
+                            Male
+                          </label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input class="form-check-input" type="radio" name="gender" value="female">
+                          <label class="form-check-label">
+                            Female
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-dark col-12 mb-2">Register</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer type="module" src="js/controllers/register.js"></script>
+</body>
+</html>

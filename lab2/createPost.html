@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Create post</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand col-4" href="index.html">&#92;b</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav col-12">
+                    <div class="d-flex flex-fill">
+                        <a class="nav-link flex-grow-1" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link flex-grow-1" href="profile.html">Profile</a>
+                        <a class="nav-link active flex-grow-1" href="createPost.html">Post</a>
+                        <a class="nav-link flex-grow-1" href="about.html">About</a>
+                        <button class="btn btn-dark flex-grow-1" id="logout">LogOut</button>
+                    </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8">
+                    <div class="card card-margin">
+                        <h2 class="p-3">Create post</h2>
+                        <div class="card-body">
+                            <form>
+                                <label class="form-label">Post title</label>
+                                <div class="mb-3">
+                                    <input type="text" class="col-6" name="postTitle">
+                                </div>
+                                <label class="form-label">Post body</label>
+                                <textarea class="col-12" name="postBody" rows="12"></textarea>
+                                <button type="submit" class="btn btn-dark mt-2">Create</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/controllers/logout.js"></script>
+    <script defer src="js/utils/redirIfNotAuth.js"></script>
+    <script defer type="module" src="js/controllers/createPost.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>About</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand col-4" href="index.html">&#92;b</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav col-12">
+                  <div class="d-flex flex-fill">
+                    <a class="nav-link flex-grow-1" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link flex-grow-1" href="profile.html">Profile</a>
+                    <a class="nav-link flex-grow-1" href="createPost.html">Post</a>
+                    <a class="nav-link active flex-grow-1" href="about.html">About</a>
+                    <button class="btn btn-dark flex-grow-1" id="logout">LogOut</button>
+                </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="main">
+        <div class="container mt-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8">
+                    <div class="card">
+                      <div class="card-body">
+                        <h1 class="card-title aling-text mb-4">About page</h1>
+                        <div class="row center">
+                          <img src="./img/logo.png" class="border border-dark border-5 rounded-3 col-3 mb-5" style="padding: 0;" alt="logo">
+                        </div>
+                        <p class="card-text fs-3"><strong>&#92;b</strong> - minimalistic blog app to discuss any topics without restrictions</p>
+                        <p class="card-text fs-3">University lab project made by Dmitry Sheremet KV-82</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/controllers/logout.js"></script>
+    <script defer src="js/utils/redirIfNotAuth.js"></script>
+</body>
+</html>

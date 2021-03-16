@@ -1,0 +1,1 @@
+export const cut = text => text.length > 50 ? `${text.split('').slice(0, 47).join('')}...` : text;
